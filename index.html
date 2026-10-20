@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anna Zhang | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Anna Zhang — student, developer, and data enthusiast.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Anna Zhang<span>.</span></a>
+      <div class="d-flex align-items-center gap-2 order-lg-last">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto me-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-5 order-md-last">
+            <div class="avatar-wrap">
+              <img src="images/avatar.jpg" alt="Portrait of Anna Zhang" class="avatar">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div id="greeting" class="greeting-chip"><i class="bi bi-sun"></i> Hello, thanks for stopping by!</div>
+            <h1>Hi, I'm <span class="highlight">Anna Zhang</span>.</h1>
+            <p class="lead text-soft mt-3">Information Systems student who builds clean, useful web apps and turns messy data into clear answers.</p>
+            <p class="text-soft">
+              I'm currently pursuing a degree in Information Systems and Accounting at University of Oklahoma, where I focus on web
+              development and data analytics. I enjoy taking a real problem, breaking it into pieces, and building
+              something that people actually want to use. Outside of class, I lead projects in our student tech club
+              and tutor peers in introductory programming. I'm detail-oriented, curious, and always learning the next tool.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="projects.html" class="btn btn-accent">View My Projects <i class="bi bi-arrow-right ms-1"></i></a>
+              <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career goals / interests -->
+    <section class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Where I'm headed</p>
+        <h2 class="section-title">Career Goals &amp; Interests</h2>
+        <p class="text-soft mb-4 col-lg-8">
+          My goal is to start my career as a full-stack developer or data analyst on a team that values thoughtful,
+          user-centered products, and to grow into a role where I connect technical work to business decisions.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card card-lift h-100">
+              <div class="card-body">
+                <div class="icon-tile"><i class="bi bi-window-stack"></i></div>
+                <h3 class="h5">Web Development</h3>
+                <p class="text-soft mb-0">Building responsive, accessible front ends and the APIs behind them.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-lift h-100">
+              <div class="card-body">
+                <div class="icon-tile teal"><i class="bi bi-bar-chart-line"></i></div>
+                <h3 class="h5">Data Analytics</h3>
+                <p class="text-soft mb-0">Cleaning, querying, and visualizing data to support better decisions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-lift h-100">
+              <div class="card-body">
+                <div class="icon-tile"><i class="bi bi-people"></i></div>
+                <h3 class="h5">Product &amp; Teams</h3>
+                <p class="text-soft mb-0">Working across roles to ship features that solve real user problems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band text-center">
+          <h2>Want to see what I've built?</h2>
+          <p class="mb-4">Browse web apps, data projects, and programming work, filterable by category.</p>
+          <a href="projects.html" class="btn btn-accent">Explore Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+      <span>&copy; <span class="year"></span> Anna Zhang</span>
+      <div>
+        <a href="https://github.com/azhang1025" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anna-zhang1" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:anna.zhang-1@ou.edu" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
